@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div>
+    <h1 id="titulo"> Formulario</h1>
+    <p id="subtitulo">Complete com suas informaçoes</p>
+    <br>
+  </div>
+  <form>
+
+    <fieldset class="grupo">
+      <div class="campo">
+        <label for="nome"><strong>Nome:</strong></label>
+        <input type="text" name="Nome" id=nome required>
+      </div>
+      <div class="campo">
+        <label for="sobrenome"><strong>Sobrenome:</strong></label>
+        <input type="text" name="sobrenome" id=sobrenome>
+      </div>
+    </fieldset>
+    <div class="campo">
+      <label for="email"><strong>Email:</strong></label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="campo">
+      <label><strong>Oque você quer ser quando crescer:</strong></label>
+      <label>
+        <input type="radio" name="devweb" value="Policial" checked> Policial
+      </label>
+      <label>
+        <input type="radio" name="devweb" value="Bombeiro"> Bombeiro
+      </label>
+      <label>
+        <input type="radio" name="devweb" value="Programador"> Programador
+      </label>
+      <div class="campo">
+        <label for=""><strong>Sexualidade</strong></label>
+        <select name="" id="Sexualidade">
+          <option selected disabled value="">Selecione</option>
+          <option>Masculino</option>
+          <option>Feminino</option>
+          <option>Não-Binario</option>
+        </select>
+      </div>
+      <fieldset class="grupo">
+        <div id="check">
+          <label><strong>Selecione uma das opçoes abaixo</strong></label><BR></BR>
+          <input type="checkbox" id="religiao" name="religiao" value="Macumbeiro">
+          <label for="religiao">Macumbeiro</label>
+          <input type="checkbox" name="religiao2" id="religiao " value="Catolica">
+          <label> Catolico</label>
+          <input type="checkbox" name="religiao3" id="religiao " value="Evangelico">
+          <label>ExuCaveira</label>
+          <input type="checkbox" name="religiao4" id="religiao " value="Tranca Rua">
+          <label>Tranca Rua</label>
+        </div>
+      </fieldset>
+      <div class="campo">
+        <br>
+        <label for="">Conte o porque voce é Macumbeiro</label>
+        <textarea width: 26em; rows="6" id="historia" name="historia"></textarea>
+      </div>
+      <button class="botao" type="submit" onsubmit="">Concluido</button>
+
+  </form>
+</body>
+
+</html>
