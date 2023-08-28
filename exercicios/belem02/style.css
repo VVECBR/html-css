@@ -1,76 +1,89 @@
-* body {
-  background-color: #fff1d6;
-  margin: 0 auto;
-  width: 960px;
+@charset " UTF-8 ";
+* {
+  margin: 0px;
+  padding: 0px;
 }
-article > h3 {
-  font-family: sans-serif;
-}
-article > p {
-  font-family: sans-serif;
-  font-weight: bold;
-  text-align: justify;
-  line-height: 1.6;
-}
-article {
-  border-color: #ccc #999 #999 #ccc;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: white;
-  border-radius: 15px;
-}
-article > h3 {
-  margin: 0;
-}
-h1 > a {
-  color: #7e9f19;
-  text-decoration: none;
-}
-h1 a:hover {
-  background-color: #7e9f19;
-  color: white;
-}
-p > a {
-  text-decoration: none;
-  color: #2c88a7;
-}
-article img {
-  border: 1px solid #7e9f19;
-  float: left;
-  margin: 10px 10px 0 0;
-  padding: 2px;
-}
-footer {
-  text-align: center;
-  font-size: 12px;
-  background-color: grey;
-}
+@import url("https://fonts.googleapis.com/css2?family=Archivo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-main {
-  padding: 3px;
-  margin: 3px;
+:root {
+  --fonteh1: "Archivo", sans-serif;
+  --fontep: "Roboto", sans-serif;
 }
-nav {
-  padding: 3px;
-  margin-bottom: 0px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
-  background-color: gray;
-  border-radius: 15px;
+body {
+  min-height: 100vh;
+  background-color: darkgrey;
+  background-image: url(imagens/Bandeira_do_Pará.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-nav > a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-  margin-right: 30px;
-  margin-left: 20px;
-}
-nav > a:hover {
-  text-decoration: underline;
+header {
+  font-family: var(--fonteh1);
+  text-align: center;
 }
 h1 {
-  text-align: center;
+  padding: 30px;
+  font-size: 3em;
 }
-footer > p {
-  margin: 0px;
+h1 > a {
+  text-decoration: none;
+  color: rgb(30, 88, 214);
+}
+nav {
+  padding: 10px;
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.425);
+  margin-bottom: 10px;
+  background-color: rgba(128, 128, 128, 0.733);
+}
+nav > a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+}
+main {
+  margin: auto;
+  min-width: 300px;
+  max-width: 1000px;
+  background-color: white;
+}
+main img {
+  
+}
+h2 {
+  margin-bottom: 20px;
+  display: block;
+  margin-left: 20px;
+  text-align: center;
+  background-color: darkgrey;
+}
+section {
+  display: inline-block;
+  font-family: var(--fonteh1);
+}
+section > p {
+  font-family: var(--fontep);
+  padding: 10px;
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+  background-color: darkgray;
+}
+footer > a {
+  text-decoration: none;
+  color: white;
+}
+
+h2#bosque {
+  margin-top: 30px;
+}
+.img {
+  float: left;
+  padding: 10px;
 }
